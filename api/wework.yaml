@@ -1,0 +1,17 @@
+create:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/user/create?access_token=${token}"
+  "json":
+    "userid": ${userid}
+    "name": ${name}
+    "mobile": ${mobile}
+    "department":
+      #- 表示数组
+      - ${department}
+
+update:
+  "method": "post"
+  "url": "https://qyapi.weixin.qq.com/cgi-bin/user/update?access_token=${token}"
+  "json":
+    "userid": ${userid}
+    "name": ${name}
