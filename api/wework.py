@@ -1,6 +1,6 @@
 import requests
-from util import Util
-from baseapi import BaseApi
+from ..api.util import Util
+from ..api.baseapi import BaseApi
 import yaml
 
 class WeWork(BaseApi):
