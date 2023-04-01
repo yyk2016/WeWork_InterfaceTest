@@ -1,5 +1,5 @@
-from test_requests.api.wework import WeWork
-from test_requests.api.util import Util
+from ..api.wework import WeWork
+from ..api.util import Util
 class TestWework:
     def test_get_token(self):
         print(Util().get_token())
