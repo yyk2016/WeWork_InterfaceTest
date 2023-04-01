@@ -39,7 +39,7 @@ class WeWork(BaseApi):
         self.params["mobile"] = mobile
         self.params["name"] = name
         self.params["department"] = department
-        with open("../api/wework.yaml", encoding="utf-8") as f:
+        with open("api/wework.yaml", encoding="utf-8") as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
 
         return self.send(data["create"])
@@ -85,7 +85,7 @@ class WeWork(BaseApi):
         #return r.json()
         self.params["userid"] = userid
         self.params["name"] = name
-        with open("../api/wework.yaml", encoding="utf-8") as f:
+        with open("api/wework.yaml", encoding="utf-8") as f:
             data = yaml.load(f, Loader=yaml.FullLoader)
             print("-------", data)
         return self.send(data["update"])
