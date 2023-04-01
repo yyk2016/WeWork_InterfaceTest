@@ -1,6 +1,6 @@
 import requests
-from test_requests.api.util import Util
-from test_requests.api.baseapi import BaseApi
+from util import Util
+from baseapi import BaseApi
 import yaml
 
 class WeWork(BaseApi):
